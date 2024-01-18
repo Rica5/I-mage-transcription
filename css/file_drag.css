@@ -153,6 +153,8 @@ select{
 }
 .text-result{
     font-size: 20px;
+    overflow: scroll;
+    max-height: 550px;
 }
 .download-container{
     border-left: 2px dotted #555;
