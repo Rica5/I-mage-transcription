@@ -5,7 +5,34 @@ var nothing = document.getElementById("nothing");
 var textResult = document.getElementById("textResult");
 var imgShown = document.getElementById("imgShown");
 var textShown = document.getElementById("textShown");
-var textFictif = "The text transcripted will be shown on this section. Please note that this is only a display text, you should put the appropriate result here.";
+var textFictif = `OBSERVATION MEDICALE<br>
+État civil<br>
+Nom du patient: Marc DASSEAY<br>
+Age: 68 ans<br>
+Date de naissance: 18 août 1955<br>
+Sexe: masculin<br>
+Date et heure de lévénement: 08 janvier 2024, à 14h 30<br>
+Motif dentrée: Douleur thoracique intense et persistante depuis 30 minutes<br>
+
+Histoire de la maladie<br>
+La maladie aurait débuté ce jour vers la fin d’après-midi par l’apparition brutale d’une douleur au niveau de la poitrine. Selon se récits le patient décrit une sensation de fatigue et présente une légère dyspnée au repos. Sa position assise lui semble être plus confortable. Il évite tout mouvement brusque. Le patient semble anxieux et en détresse. Il décrit la douleur thoracique comme une sensation de serrements, notant une sensation excessive. Il est pâle et a du mal à rester immobile.<br>
+D’où sa venu au sein du centre.<br>
+
+Antécédents médicaux:<br>
+- hypertension artérielle traitée<br>
+- hyperlipidémie en cours de traitement<br>
+- aucun antécédent d’allergie médicamenteuse<br>
+- un diabète de type II, une hyperuricémie, une hypertrophie bénigne de la prostate<br>
+- tabagique avec une consommation de 37 PA<br>
+- antécédents familiaux de diabète du coté parental<br>
+
+Signes vitaux à l’arrivée<br>
+FC: 110 bpm<br>
+TA: 150 / 90 mmHg<br>
+FR: 22 cpm<br>
+T°: 37 °C<br>
+SPO2: 97%<br>`;
+
 var handBtn = document.getElementById("handwritten");
 var printBtn = document.getElementById("print");
 var optionText = "Print";
@@ -101,7 +128,7 @@ var siteLanguage = document.getElementById("siteLanguage");
 				setTimeout(() => {
 					waiting.setAttribute("class","col-12 d-none justify-content-center align-items-center");
 				}, 1000);
-				textResult.textContent = textFictif;
+				textResult.innerHTML = textFictif;
 					imgShown.setAttribute("class","d-block col-md-6 content-img");
 					textShown.setAttribute("class","d-block col-md-6 p-y mt-0 px-0");
 					nothing.innerHTML = "Please select image PNG or JPG => up to 10 Mb";
