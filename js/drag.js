@@ -206,16 +206,16 @@ var siteLanguage = document.getElementById("siteLanguage");
 })();
 function activeBtn(clickedBtn){
 	if (clickedBtn == "hand"){
-		handBtn.setAttribute("class","activeBtn");
+		handBtn.setAttribute("class","activeBtn mb-1");
 		handBtn.innerHTML = 'HANDWRITTEN <i class="fa-solid fa-check-to-slot"></i>';
-		printBtn.setAttribute("class","btn-type");
+		printBtn.setAttribute("class","btn-type mb-1");
 		printBtn.innerHTML = 'PRINT';
 		optionText = "Handwritten";
 	}
 	else {
-		printBtn.setAttribute("class","activeBtn");
+		printBtn.setAttribute("class","activeBtn mb-1");
 		printBtn.innerHTML = 'PRINT <i class="fa-solid fa-check-to-slot"></i>'
-		handBtn.setAttribute("class","btn-type");
+		handBtn.setAttribute("class","btn-type mb-1");
 		handBtn.innerHTML = 'HANDWRITTEN';
 		optionText = "Print"
 	}
